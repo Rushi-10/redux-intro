@@ -16,7 +16,7 @@ const{loan:currentLoan,
 console.log(balance);
   function handleDeposit(e) {
     if(!depositAmount) return;
-    dispatch(deposit(depositAmount));
+    dispatch(deposit(depositAmount,currency));
     setDepositAmount("");
     setCurrency("USD");
   }
